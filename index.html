@@ -1,0 +1,49 @@
+<html data-ng-app='angularMaterialUI' lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <!--<link rel="stylesheet" href="css/vendor/bootstrap.css">-->
+        <link href="css/vendor/ripples.min.css" rel="stylesheet">
+        <link href="css/vendor/material-wfont.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/vendor/ng-grid.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Angular Material Design</title>
+    </head>
+
+    <body>
+
+        <div ui-view ></div>
+
+        <!-- Your site ends -->
+
+        <script src='//code.jquery.com/jquery-2.1.1.js'></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <script src="scripts/vendor/ripples.min.js"></script>
+        <script src="scripts/vendor/material.min.js"></script>
+        <!-- attempt to load AngularJS from CDN -->   
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>          
+
+
+        <!-- if AngularJS fails to load fallback a local version -->  
+        <script>window.angular || document.write('<script src="scripts/vendor/angular.min.js"><\/script>');</script> 
+        <script src='scripts/vendor/ui-bootstrap-tpls-0.11.0.js'></script>
+        <script src='scripts/vendor/angular-ui-router.js'></script>
+        <script src='scripts/vendor/ng-grid.debug.js'></script>
+        <script src='scripts/vendor/angular-cookies.js'></script>
+        <script src='scripts/vendor/angular-md5.js'></script>
+        <script src='scripts/backbone.js'></script> 
+        <script>
+            $(document).ready(function() {
+                $.material.init();
+            });
+        </script>
+        
+    </body>
+
+</html>
